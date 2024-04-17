@@ -1,0 +1,44 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #0E1d35;
+}
+
+.Container {
+  border: 2px solid;
+  border-color: rgb(255, 255, 255);
+  width: 400px;
+  margin: auto;
+  background-color: white;
+}
+
+h1{
+  text-align: center;
+  color: #dddee5;
+  font-size: x-large;
+}
+
+
+
+form {
+  width: 100%;
+}
+
+.inputs-lab {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+}
+
+.botao {
+  border: 2px solid;
+  border-color: blue;
+  display: flex;
+  justify-content: right;
+  margin: 10px;
+}
+
+.botao button {
+  padding: 10px;
+}
