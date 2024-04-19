@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './index.css';
 
+
 function App() {
   const [nome, setNome] = useState('');
   const [idade, setIdade] = useState('');
@@ -12,6 +13,7 @@ function App() {
   const [numero_casa, setNumeroCasa] = useState('');
   const [cidade, setCidade] = useState('');
   const [estado, setEstado] = useState('');
+  const [dependente, setDependente] = useState('');
 
 
 
@@ -20,8 +22,8 @@ function App() {
     alert(`Nome: ${nome}, Idade: ${idade}, 
     Email: ${email}, Telefone: ${telefone}, Rua: ${rua},
     Bairro: ${bairro}, Numero da Casa: ${numero_casa},
-    Cidade: ${cidade}, Estado ${estado}, Cargo: ${cargo}`);
-
+    Cidade: ${cidade}, Estado ${estado}, Cargo: ${cargo},
+    Dependente: ${dependente}`);
   };
 
   return (
@@ -69,6 +71,11 @@ function App() {
           <div className="inputs-lab">
             <label> Cargo (Somente Funcionários): </label>
             <input type="text" value={cargo} onChange={(e) => setCargo(e.target.value)} />
+          </div>
+          <h2> Dependente </h2>
+          <div className="inputs-lab">
+            <label> Nome </label>
+            <input type="text" value={dependente} onChange={(e) => setDependente(e.target.value)} />
           </div>
           <div className="botao">
           <button onClick={handleCadastro}>Cadastrar</button>

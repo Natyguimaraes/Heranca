@@ -1,7 +1,7 @@
-const Pessoa = require('./pessoa');
+import Pessoa from './pessoa.js'
 
 class Funcionario extends Pessoa {
-    construtor(nome, idade, cargo) {
+    constructor(nome, idade, cargo) {
         super(nome, idade);
         this.cargo = cargo;
     }
@@ -12,4 +12,7 @@ class Funcionario extends Pessoa {
     }
 }
 
-module.exports = { Funcionario };
+const funcionario1 = new Funcionario("Naty", 20,"Motorista");
+funcionario1.mostrarDados();
+
+export default Funcionario; 

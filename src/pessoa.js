@@ -10,4 +10,4 @@ class Pessoa {
     } //instaciamento da classe// 
 }
 
-module.exports = { Pessoa };
+export default Pessoa;
