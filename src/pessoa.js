@@ -1,6 +1,6 @@
 
 class Pessoa {
-    construtor(nome, idade) {
+    constructor(nome, idade) {
         this.nome = nome;
         this.idade = idade;
     }
@@ -15,8 +15,8 @@ class Pessoa {
     }
 }
 
-//const pessoa1 = new Pessoa("Natália", 20);
-//pessoa1.mostrarDados();
+const pessoa1 = new Pessoa("Natália", 20);
+pessoa1.mostrarDados();
 
 
 export default Pessoa;
